@@ -1,3 +1,4 @@
+#global scope
 icecream = "Chocolate"
 
 def food():
@@ -8,4 +9,4 @@ def food():
     
 food()
 print(icecream)
-print(fruit)
+# print(fruit) // error  local scope 
