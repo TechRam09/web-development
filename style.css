@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.vvietHeader {
+     width: 100%;
+     height: 80px;
+     border: 1px solid black;
+     background: blue;
+ }
+
+ .container1 {
+     display: flex !important;
+     border: 1px solid black;
+     height: 75vh;
+     gap: 20px;
+     padding: 20px;
+     background: yellow;
+ }
+
+ .div1 {
+     width: 20%;
+     border: 1px solid black;
+     height: 100%;
+     background-color: green;
+ }
+
+ .div2 {
+     width: 80%;
+     border: 1px solid black;
+     height: 100%;
+     background: red;
+ }
+
+ footer {
+     width: 100%;
+     height: 80px;
+     border: 1px solid black;
+     background-color: aquamarine;
+ }
