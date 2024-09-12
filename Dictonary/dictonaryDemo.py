@@ -35,6 +35,10 @@ print(student.keys())
 #values() => returns only.values
 print(student.values())
 
+#pop() => pop the topest element from the dictionary
+student.pop()
+print()
+
 #clear() => returns a empty dictionary
 student.clear()
 print(student)
