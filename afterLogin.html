@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 80px;
+        border: 5px solid black;
+      }
+
+      header nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 50px;
+        align-items: center;
+        width: 100%;
+      }
+
+      .nav-list {
+        display: flex;
+      }
+
+      .nav-list .nav-items {
+        list-style: none;
+        text-decoration: none;
+        margin: 0px 15px;
+        font-size: 1.2em;
+        font-weight: 500;
+      }
+
+      .nav-items:hover {
+        color: rgb(75, 2, 153);
+        text-decoration: underline;
+      }
+
+      .logo {
+        overflow: hidden;
+        height: 70px;
+        width: 70px;
+      }
+
+      .logo img {
+        height: 100%;
+        width: 100%;
+      }
+
+      .profileBtn {
+        overflow: hidden;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+      }
+
+      .btn {
+        background-color: rgb(75, 2, 153);
+        color: aliceblue;
+        padding: 12px;
+        border-radius: 50px;
+        font-weight: 500;
+        border: 0;
+        outline: 0;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="./afterLogin.html"><img src="./logo.jpeg" alt="logo" /></a>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-items">Home</li>
+          <li class="nav-items">About</li>
+          <li class="nav-items">Deparment</li>
+          <li class="nav-items">Contact</li>
+        </ul>
+        <div class="profileBtn logo">
+          <img src="./profile.webp" alt="profile" />
+        </div>
+      </nav>
+    </header>
+  </body>
+</html>
