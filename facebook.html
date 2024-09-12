@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: rgba(223, 216, 216, 0.519);
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+      }
+
+      .leftDiv {
+        padding: 50px;
+        width: 50%;
+        padding-right: 0;
+      }
+
+      .description {
+        width: 50%;
+      }
+
+      .rightDiv {
+        width: 30%;
+        padding: 50px;
+        padding-left: 0;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+
+        border-radius: 12px;
+        -webkit-box-shadow: -2px 2px 15px -8px rgba(54, 52, 54, 1);
+        -moz-box-shadow: -2px 2px 15px -8px rgba(54, 52, 54, 1);
+        box-shadow: -2px 2px 15px -8px rgba(54, 52, 54, 1);
+        padding: 15px;
+      }
+
+      form input {
+        margin: 20px;
+        padding: 10px;
+        border-radius: 12px;
+        background-color: white;
+        border: 0;
+        outline: 1px solid #a1a1a1;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="leftDiv">
+        <h1 class="Cname">facebook</h1>
+        <p class="description">
+          Facebook helps you connext and share with the people un your life
+        </p>
+      </div>
+      <div class="rightDiv">
+        <form action="">
+          <input type="text" placeholder="Email adderess or phone number" />
+          <input type="password" placeholder="Password" />
+          <button>Log in</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
