@@ -7,11 +7,37 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="vvietHeader">vviet header</header>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="./vvietPage.html"> <img src="./logo.jpeg" alt="logo" /></a>
+        </div>
+        <ul class="nav-list">
+          <li class="nav-items">Home</li>
+          <li class="nav-items">About</li>
+          <li class="nav-items">Deparment</li>
+          <li class="nav-items">Contact</li>
+        </ul>
+        <div>
+          <a href="./vviet.html"
+            ><button class="registerBtn btn">Register</button></a
+          >
+        </div>
+      </nav>
+    </header>
     <div class="container1">
-      <div class="div1">sidebar</div>
-      <div class="div2">content</div>
+      <div class="div1"><h1>Sidebar</h1></div>
+      <div class="div2">
+        <h1>Register</h1>
+        <form action="./afterLogin.html" class="form">
+          <input type="text" placeholder="Name" id="name" required />
+          <input type="text" placeholder="Gender" id="gender" required />
+          <input type="number" placeholder="Age" id="age" required />
+          <input type="email" placeholder="Email" id="email" required />
+          <button class="btn" type="submit">Register</button>
+        </form>
+      </div>
     </div>
-    <footer>vviet footer</footer>
+    <footer><h5>VVIET &copy; All rights Reservered</h5></footer>
   </body>
 </html>
