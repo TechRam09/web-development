@@ -3,13 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://www.facebook.com/images/fb_icon_325x325.png"
+    />
+    <title>Facebook-log in or sign up</title>
     <style>
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        background-color: rgba(223, 216, 216, 0.519);
+        background-color: rgb(248 245 245 / 52%);
       }
       .container {
         display: flex;
@@ -25,8 +30,17 @@
         padding-right: 0;
       }
 
+      .leftDiv img {
+        height: 106px;
+      }
+
       .description {
-        width: 50%;
+        font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+        font-size: 28px;
+        font-weight: normal;
+        line-height: 32px;
+        width: 500px;
+        margin-left: 30px;
       }
 
       .rightDiv {
@@ -50,20 +64,107 @@
       }
 
       form input {
-        margin: 20px;
-        padding: 10px;
-        border-radius: 12px;
+        margin: 10px;
+        padding: 20px 12px;
+        border-radius: 10px;
         background-color: white;
         border: 0;
         outline: 1px solid #a1a1a1;
         width: 100%;
+        font-size: 16px;
+      }
+
+      form input:focus {
+        border: 2px solid #1877f2;
+      }
+
+      .btn {
+        padding: 10px;
+        width: 100%;
+        border-radius: 12px;
+
+        outline: 0;
+        border: 0;
+        font-weight: 600px;
+        color: white;
+      }
+
+      .loginBtn {
+        margin-top: 10px;
+        background: #1877f2;
+        border-radius: 5px;
+      }
+
+      .loginBtn:hover {
+        background: #034cab;
+      }
+
+      .btn h3 {
+        background: transparent;
+      }
+
+      .link {
+        text-decoration: none;
+
+        background-color: transparent;
+      }
+
+      .password {
+        margin: 20px;
+        color: #1877f2;
+        font-weight: 500;
+        font-size: 14px;
+        font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+        cursor: pointer;
+      }
+
+      .password:hover {
+        color: #034cab;
+        text-decoration: underline;
+      }
+
+      .createBtnDiv {
+        margin-left: 40px;
+        margin-right: 40px;
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        padding: 12px 95px;
+        border-top: 2px solid #cbc6c6;
+        width: 100%;
+      }
+
+      .createBtn {
+        margin-top: 10px;
+        background: #36a420;
+
+        border-radius: 5px;
+        padding: 12px;
+        cursor: pointer;
+      }
+
+      .createBtn:hover {
+        background: #168001;
+        cursor: pointer;
+      }
+
+      .verifiedText {
+        text-align: center;
+        margin: 30px;
+        color: #1c1e21;
+        font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        font-weight: normal;
       }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="leftDiv">
-        <h1 class="Cname">facebook</h1>
+        <img
+          src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg"
+          alt=""
+        />
         <p class="description">
           Facebook helps you connext and share with the people un your life
         </p>
@@ -72,8 +173,18 @@
         <form action="">
           <input type="text" placeholder="Email adderess or phone number" />
           <input type="password" placeholder="Password" />
-          <button>Log in</button>
+          <button class="loginBtn btn"><h3>Log in</h3></button>
+          <a href="" class="link password">Forgot Password?</a>
+          <hr />
+          <hr />
+          <div class="createBtnDiv">
+            <button class="createBtn btn"><h3>Create new account</h3></button>
+          </div>
         </form>
+        <p class="verifiedText">
+          <a href="" class="link" style="color: black"><b>Create a Page</b></a>
+          for a celebrity, brand or business.
+        </p>
       </div>
     </div>
   </body>
