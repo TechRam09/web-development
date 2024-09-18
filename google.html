@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header {
+        width: 100%;
+        height: 80px;
+      }
+      header nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+      }
+
+      .nav-list {
+        display: flex;
+        align-items: center;
+      }
+
+      .nav-items {
+        margin: 0px 6px;
+        list-style: none;
+      }
+
+      .rightList {
+        margin-right: 50px;
+      }
+
+      .container {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      input {
+        border-radius: 50px;
+        padding: 10px;
+        width: 100%;
+      }
+
+      .formDiv {
+        width: 500px;
+        margin-top: -250px;
+      }
+
+      .formDiv img {
+        width: 100%;
+      }
+
+      .btnDiv {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .btnDiv button {
+        padding: 12px;
+        outline: 0;
+        border: 0;
+      }
+
+      .searchContainer {
+        position: relative;
+      }
+
+      .searchIcon {
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        height: 20px;
+        width: 20px !important;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <ul class="nav-list">
+            <li class="nav-items">About</li>
+            <li class="nav-items">Store</li>
+          </ul>
+        </div>
+        <div class="rightList">
+          <ul class="nav-list">
+            <li class="nav-items">Gmail</li>
+            <li class="nav-items">images</li>
+            <img src="" alt="" />
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="formDiv">
+        <img src="./google_logo.svg" alt="" / >
+        <form action="">
+          <div class="searchContainer">
+            <input type="search" />
+            <img src="./search.png" alt="" class="searchIcon" />
+          </div>
+
+          <div class="btnDiv">
+            <button>Google Search</button><button>I'm Frrling Lucky</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
