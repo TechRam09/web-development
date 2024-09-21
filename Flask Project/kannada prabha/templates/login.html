@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ಕನ್ನಡಪ್ರಭ | ಲಾಗಿನ್</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0a0909;
+      }
+
+      form {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #303030;
+        border: 1px solid black;
+        padding: 20px;
+        border-radius: 12px;
+      }
+
+      input {
+        padding: 12px;
+        width: 100%;
+        margin: 10px 0px;
+        border-radius: 12px;
+        border: 0;
+      }
+
+      button {
+        padding: 12px;
+        border-radius: 50px;
+        background-color: #0a0909;
+        color: white;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+        font-weight: 600;
+        margin-top: 12px;
+      }
+
+      h1 {
+        color: white;
+        margin-bottom: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/login" method="post">
+      <h1>ಲಾಗಿನ್ ಮಾಡಿ</h1>
+      <input type="username" placeholder="ಯುಸರ್‌ನೇಮ್" name="username" />
+      <input type="password" placeholder="ಪಾಸ್ವರ್ಡ್" name="password" />
+      <button type="submit" id="submitBtn">ಸಲ್ಲಿಸಿರಿ</button>
+    </form>
+  </body>
+  <script>
+    let submitBtn = document.getElementById("submitBtn");
+
+    submitBtn.addEventListener("click", () => {
+      alert("ನೀವು ಲಾಗ್ ಇನ್ ಆಗಿದ್ದೀರಿ, ಸ್ವಾಗತ ನಿಶಾಂತ್");
+    });
+  </script>
+</html>
