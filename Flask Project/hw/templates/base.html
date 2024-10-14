@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>base</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: black;
+      }
+
+      nav {
+        height: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(48, 46, 46);
+      }
+
+      .nav-list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+      }
+
+      .nav-items {
+        margin: 0px 12px;
+      }
+
+      .nav-items a {
+        text-decoration: none;
+        color: white;
+      }
+
+      #rightBox {
+        margin-right: 25px;
+      }
+      #leftBox {
+        margin-left: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul id="leftBox" class="nav-list">
+          <li class="nav-items"><a href="/home">Home</a></li>
+          <li class="nav-items"><a href="/upload">Upload</a></li>
+        </ul>
+        <ul id="rightBox" class="nav-list">
+          <li class="nav-items"><a href="/login">Login</a></li>
+          <li class="nav-items"><a href="/register">Register</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>
